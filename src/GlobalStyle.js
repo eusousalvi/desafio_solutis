@@ -55,7 +55,8 @@ export const GlobalStyle = createGlobalStyle`
     fill: var(--purple);
   }
 
-  .maxWidth{
+  .width{
+    width: 100%;
     max-width: 1440px;
   }
 `;

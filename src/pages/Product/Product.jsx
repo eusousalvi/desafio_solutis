@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import API from '../../service/API';
 import { configureButton } from '../../store/button/button';
 import btn from '../../helpers/btnConfig';
-import { Wrapper, Img, Content, Price } from './style';
+import { Wrapper, Img, Content, Price, Bottom } from './style';
 import FavButton from '../../components/FavButton/FavButton';
 import formatCurrency from '../../helpers/formatCurrency';
+import Amount from '../../components/Amount/Amount';
 
 const Product = () => {
   const [product, setProduct] = useState(null);
+  const productAmount = useSelector((state) => state.counter.productCounter);
   const params = useParams();
   const dispatch = useDispatch();
 
@@ -40,7 +42,10 @@ const Product = () => {
           <p>{product.description}</p>
           <Price>{formatCurrency(product.price)}</Price>
         </Content>
-        <Button product={product} />
+        <Bottom>
+          <Button product={{ ...product, amount: productAmount }} />{' '}
+          <Amount type="productCounter" />
+        </Bottom>
       </Wrapper>
     );
   }

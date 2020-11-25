@@ -7,7 +7,7 @@ const Footer = () => {
   const mobile = useSelector((state) => state.mobile);
 
   return (
-    <Wrapper className="maxWidth">
+    <Wrapper className="width">
       {mobile.active ? (
         <Menu />
       ) : (

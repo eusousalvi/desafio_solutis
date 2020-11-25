@@ -9,7 +9,7 @@ const Header = () => {
   const mobile = useSelector((state) => state.mobile);
 
   return (
-    <Wrapper mobile={mobile} className="maxWidth">
+    <Wrapper mobile={mobile} className="width">
       {mobile.active ? (
         <Logo />
       ) : (

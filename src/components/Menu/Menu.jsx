@@ -1,5 +1,5 @@
 import React from 'react';
-import { MenuItem, Wrapper } from './style';
+import { MenuItem, Wrapper, CounterWrapper } from './style';
 import {
   MdStore,
   MdSearch,
@@ -8,6 +8,7 @@ import {
   MdPerson,
 } from 'react-icons/md';
 import { useSelector } from 'react-redux';
+import Amount from '../Amount/Amount';
 
 const Menu = () => {
   const mobile = useSelector((state) => state.mobile);
@@ -21,6 +22,9 @@ const Menu = () => {
         <MdSearch size={35} color="#999" />
       </MenuItem>
       <MenuItem to="/cart">
+        <CounterWrapper>
+          <Amount type="cartCounter" onMenu={true} />
+        </CounterWrapper>
         <MdShoppingCart size={35} color="#999" />
       </MenuItem>
       <MenuItem to="/favorites">

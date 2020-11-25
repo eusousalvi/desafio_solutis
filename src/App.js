@@ -30,7 +30,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div className="app maxWidth">
+    <div className="app width">
       <Router>
         <GlobalStyle />
         <Header />

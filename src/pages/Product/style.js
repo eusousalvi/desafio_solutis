@@ -15,7 +15,9 @@ export const Content = styled.div`
   align-items: center;
 `;
 
-export const Bottom = styled.div``;
+export const Bottom = styled.div`
+  display: flex;
+`;
 
 export const Price = styled.p`
   color: var(--dark-purple);

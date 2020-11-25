@@ -9,7 +9,14 @@ const slice = createSlice({
   reducers: {
     add: {
       reducer(state, action) {
-        state.items.push(action.payload);
+        let newProduct = action.payload;
+        state.items.forEach((item) => {
+          if (item.id === newProduct.id) {
+            item.amount = item.amount + newProduct.amount;
+            newProduct = null;
+          }
+        });
+        newProduct && state.items.push(newProduct);
       },
       prepare(payload) {
         return {
