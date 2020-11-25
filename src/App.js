@@ -10,21 +10,25 @@ import Results from './pages/Results/Results';
 import Product from './pages/Product/Product';
 import Cart from './pages/Cart/Cart';
 import Favorites from './pages/Favorites/Favorites';
+import User from './pages/User/User';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Router>
         <GlobalStyle />
         <Header />
-        <Switch>
-          <Route exact path="/" children={<Home />} />
-          <Route exact path="/results/" children={<Results />} />
-          <Route exact path="/results/:id" children={<Results />} />
-          <Route exact path="/product/:id" children={<Product />} />
-          <Route exact path="/cart/" children={<Cart />} />
-          <Route exact path="/favorites/" children={<Favorites />} />
-        </Switch>
+        <main className="main">
+          <Switch>
+            <Route exact path="/" children={<Home />} />
+            <Route exact path="/results/" children={<Results />} />
+            <Route exact path="/results/:id" children={<Results />} />
+            <Route exact path="/product/:id" children={<Product />} />
+            <Route exact path="/cart/" children={<Cart />} />
+            <Route exact path="/favorites/" children={<Favorites />} />
+            <Route exact path="/user/" children={<User />} />
+          </Switch>
+        </main>
         <Footer />
       </Router>
     </div>

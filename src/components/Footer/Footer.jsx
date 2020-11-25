@@ -1,7 +1,13 @@
 import React from 'react';
+import { Wrapper } from './style';
+import Menu from '../Menu/Menu';
 
 const Footer = () => {
-  return <footer>Esse é o footer</footer>;
+  return (
+    <Wrapper>
+      <Menu />
+    </Wrapper>
+  );
 };
 
 export default Footer;

@@ -4,6 +4,7 @@ export const Form = styled.form`
   width: 70%;
   height: 2.5rem;
   position: relative;
+  margin-top: 1rem;
 `;
 export const Bar = styled.input`
   width: 100%;

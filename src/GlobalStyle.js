@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     --radius: 0.9rem;
     --margin: 0.5rem;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.38);
+    --fixed-height: 4.375rem;
   }
 
   *{

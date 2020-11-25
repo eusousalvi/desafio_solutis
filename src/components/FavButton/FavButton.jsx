@@ -11,8 +11,6 @@ const FavButton = ({ product }) => {
   const add = { type: 'add', product };
   const remove = { type: 'remove', product };
 
-  console.log(favState);
-
   return (
     <>
       {favState?.fav ? (

@@ -6,6 +6,7 @@ export const Wrapper = styled.section`
   align-items: center;
   position: relative;
   width: 90%;
+  margin-top: 1rem;
 `;
 
 export const Content = styled.div`
