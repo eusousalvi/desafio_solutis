@@ -15,7 +15,10 @@ export const GlobalStyle = createGlobalStyle`
     --radius: 0.9rem;
     --margin: 0.5rem;
     --shadow: 0 2px 8px rgba(0, 0, 0, 0.38);
+    --header-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.38);
+    --footer-shadow: 0 -5px 8px -5px rgba(0, 0, 0, 0.38);
     --fixed-height: 4.375rem;
+    --fixed-margin: 5.375rem;
   }
 
   *{
@@ -23,5 +26,36 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+  }
+
+  #root{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--fixed-margin);
+    margin-bottom: var(--fixed-margin);
+  }
+
+  a.active svg {
+    fill: var(--purple);
+  }
+
+  .maxWidth{
+    max-width: 1440px;
   }
 `;

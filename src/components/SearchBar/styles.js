@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const Form = styled.form`
-  width: 70%;
+  width: ${(props) => (props.mobile.active ? '70%' : '50%')};
   height: 2.5rem;
   position: relative;
-  margin-top: 1rem;
 `;
 export const Bar = styled.input`
   width: 100%;
@@ -13,6 +12,7 @@ export const Bar = styled.input`
   border-radius: 1.25rem;
   box-shadow: var(--shadow);
   padding: 1rem;
+  outline: none;
 `;
 export const Button = styled.button`
   background-color: transparent;

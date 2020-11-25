@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { GlobalStyle } from './GlobalStyle';
 
-import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -11,10 +10,27 @@ import Product from './pages/Product/Product';
 import Cart from './pages/Cart/Cart';
 import Favorites from './pages/Favorites/Favorites';
 import User from './pages/User/User';
+import { useDispatch } from 'react-redux';
+import { activeMobile, deactivateMobile } from './store/mobile/mobile';
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const listener = window.addEventListener('resize', () => {
+      const screen = window.screen.width;
+      if (screen < 768) {
+        dispatch(activeMobile());
+      } else {
+        dispatch(deactivateMobile());
+      }
+    });
+
+    return () => window.removeEventListener(listener);
+  }, [dispatch]);
+
   return (
-    <div className="app">
+    <div className="app maxWidth">
       <Router>
         <GlobalStyle />
         <Header />

@@ -7,10 +7,13 @@ import {
   MdFavorite,
   MdPerson,
 } from 'react-icons/md';
+import { useSelector } from 'react-redux';
 
 const Menu = () => {
+  const mobile = useSelector((state) => state.mobile);
+
   return (
-    <Wrapper>
+    <Wrapper mobile={mobile}>
       <MenuItem to="/" exact>
         <MdStore size={35} color="#999" />
       </MenuItem>

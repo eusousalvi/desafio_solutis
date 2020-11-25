@@ -31,7 +31,7 @@ const slice = createSlice({
   },
 });
 
-export const getProducts = () => async (dispatch) => {
+export const getProducts = (page) => async (dispatch) => {
   try {
     dispatch(fetchStarted());
     const data = await API.productsFetch();
