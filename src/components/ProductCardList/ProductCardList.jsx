@@ -12,7 +12,7 @@ const ProductCardList = () => {
 
   return (
     <Wrapper mobile={mobile}>
-      {products && products.items > 0 ? (
+      {products ? (
         products.items.map((product) => {
           return <ProductCard key={product.id} product={product} />;
         })
