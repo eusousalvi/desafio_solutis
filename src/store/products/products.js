@@ -81,7 +81,6 @@ export const getProductsPaginated = () => async (dispatch, getState) => {
   const state = getState().products;
   if (state.loadMore) {
     try {
-      // dispatch(fetchStarted());
       const data = await API.productsFetch(state.page);
       dispatch(productsPaginated(data));
     } catch (error) {
