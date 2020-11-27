@@ -1,7 +1,7 @@
 import config from '../helpers/apiConfig';
 
-const productsFetch = async () => {
-  const response = await fetch(config.PRODUCT_URL);
+const productsFetch = async (page) => {
+  const response = await fetch(config.PRODUCTS_PAGINATE_URL + page);
   const json = await response.json();
   return json;
 };

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import LoadMoreButton from '../../components/LoadMoreButton/LoadMoreButton.jsx';
 
 import ProductCardList from '../../components/ProductCardList/ProductCardList.jsx';
 import SearchBar from '../../components/SearchBar/SearchBar.jsx';
@@ -17,6 +18,7 @@ const Home = () => {
     <>
       {mobile && <SearchBar />}
       <ProductCardList />
+      <LoadMoreButton />
     </>
   );
 };
