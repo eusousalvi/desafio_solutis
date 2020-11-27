@@ -4,17 +4,23 @@ import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { useSelector } from 'react-redux';
 import Menu from '../Menu/Menu';
 import SearchBar from '../SearchBar/SearchBar';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const mobile = useSelector((state) => state.mobile);
+  const mobile = useSelector((state) => state.mobile.active);
 
   return (
     <Wrapper mobile={mobile} className="width">
-      {mobile.active ? (
-        <Logo />
+      {mobile ? (
+        <Link to="/">
+          <Logo />
+        </Link>
       ) : (
         <>
-          <Logo /> <SearchBar /> <Menu />
+          <Link to="/">
+            <Logo />
+          </Link>
+          <SearchBar /> <Menu />
         </>
       )}
     </Wrapper>

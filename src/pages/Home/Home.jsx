@@ -6,7 +6,7 @@ import SearchBar from '../../components/SearchBar/SearchBar.jsx';
 import { getProducts } from '../../store/products/products';
 
 const Home = () => {
-  const mobile = useSelector((state) => state.mobile);
+  const mobile = useSelector((state) => state.mobile.active);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      {mobile.active && <SearchBar />}
+      {mobile && <SearchBar />}
       <ProductCardList />
     </>
   );

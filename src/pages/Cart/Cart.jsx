@@ -4,6 +4,7 @@ import ProductCardList from '../../components/ProductCardList/ProductCardList';
 import { setProductsByData } from '../../store/products/products';
 import { configureButton } from '../../store/button/button';
 import btn from '../../helpers/btnConfig';
+import DefaultMessage from '../../components/DefaultMessage/DefaultMessage';
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -14,6 +15,10 @@ const Cart = () => {
     dispatch(configureButton(btn.remover));
     return () => dispatch(configureButton(btn.hide));
   }, [dispatch, cart]);
+
+  console.log(cart?.items.length);
+  if (cart?.items.length <= 0)
+    return <DefaultMessage text="Você ainda não escolheu nada :(" />;
 
   return <ProductCardList />;
 };

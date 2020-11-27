@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
   :root{
     --white: #FFF;
     --light: #F3F7FA;
@@ -18,7 +17,7 @@ export const GlobalStyle = createGlobalStyle`
     --header-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.38);
     --footer-shadow: 0 -5px 8px -5px rgba(0, 0, 0, 0.38);
     --fixed-height: 4.375rem;
-    --fixed-margin: 5.375rem;
+    --fixed-padding: 5.375rem;
   }
 
   *{
@@ -47,8 +46,7 @@ export const GlobalStyle = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: var(--fixed-margin);
-    margin-bottom: var(--fixed-margin);
+    padding: var(--fixed-padding)  5%;
   }
 
   a.active svg {

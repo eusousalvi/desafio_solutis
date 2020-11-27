@@ -3,9 +3,8 @@ import styled from 'styled-components';
 export const Wrapper = styled.header`
   display: flex;
   width: 100%;
-  justify-content: ${(props) =>
-    props.mobile.active ? 'center' : 'space-evenly'};
-  ${(props) => (props.mobile.active ? '' : 'padding: 0 5%;')}
+  justify-content: ${(props) => (props.mobile ? 'center' : 'space-evenly')};
+  ${(props) => (props.mobile ? '' : 'padding: 0 5%;')}
   align-items: center;
   height: var(--fixed-height);
   background: var(--white);

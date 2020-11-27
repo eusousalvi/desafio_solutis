@@ -17,16 +17,22 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const listener = window.addEventListener('resize', () => {
+    function listener() {
       const screen = window.screen.width;
       if (screen < 768) {
         dispatch(activeMobile());
       } else {
         dispatch(deactivateMobile());
       }
-    });
+    }
 
-    return () => window.removeEventListener(listener);
+    window.addEventListener('resize', listener);
+    window.addEventListener('load', listener);
+
+    return () => {
+      window.removeEventListener('resize', listener);
+      window.removeEventListener('load', listener);
+    };
   }, [dispatch]);
 
   return (

@@ -5,7 +5,8 @@ export const Wrapper = styled.section`
   flex-direction: column;
   align-items: center;
   position: relative;
-  width: 90%;
+  width: 100%;
+  padding: 5%;
   margin-top: 1rem;
 `;
 
@@ -13,6 +14,8 @@ export const Content = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 30rem;
+  padding: 0 5%;
 `;
 
 export const Bottom = styled.div`
@@ -21,11 +24,11 @@ export const Bottom = styled.div`
 
 export const Price = styled.p`
   color: var(--dark-purple);
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
-  margin-top: 1rem;
+  margin: 1rem 0;
 `;
 
 export const Img = styled.img`
-  width: 100%;
+  max-width: 19rem;
 `;
