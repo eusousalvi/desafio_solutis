@@ -3,7 +3,7 @@ const { createSlice } = require('@reduxjs/toolkit');
 const slice = createSlice({
   name: 'mobile',
   initialState: {
-    active: false,
+    active: true,
   },
   reducers: {
     activeMobile(state, action) {
