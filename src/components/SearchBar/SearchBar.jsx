@@ -16,7 +16,11 @@ const SearchBar = () => {
 
   return (
     <Form onSubmit={handleSubmit} mobile={mobile}>
-      <Bar value={value} onChange={({ target }) => setValue(target.value)} />
+      <Bar
+        required
+        value={value}
+        onChange={({ target }) => setValue(target.value)}
+      />
       <Button>
         <MdSearch size={25} color="#985FF3" />
       </Button>
