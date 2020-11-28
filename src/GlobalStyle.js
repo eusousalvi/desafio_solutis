@@ -39,6 +39,7 @@ export const GlobalStyle = createGlobalStyle`
   flex-direction: column;
   align-items: center;
   height: 100vh;
+  overflow-x: hidden;
   }
 
   .main {
