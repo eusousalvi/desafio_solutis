@@ -22,7 +22,7 @@
     <a href="https://github.com/gabriel-codes/desafio_solutis"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/gabriel-codes/desafio_solutis">View Demo</a>
+    <a href="https://quirky-ramanujan-e78b18.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/gabriel-codes/desafio_solutis/issues">Report Bug</a>
     ·
