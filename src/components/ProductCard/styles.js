@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Card = styled.div`
   max-width: ${(props) => (props.mobile ? '19rem' : '10rem')};
-  max-height: ${(props) => (props.mobile ? '12rem' : '19rem')};
+  height: ${(props) => (props.mobile ? '12rem' : '19rem')};
   ${(props) => (props.mobile ? '' : 'flex-direction: column;')}
   background-color: var(--white);
   border-radius: var(--radius);

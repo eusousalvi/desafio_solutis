@@ -1,10 +1,9 @@
 import React from 'react';
-import { Wrapper } from './styles';
+import { Wrapper, HomeLink } from './styles';
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 import { useSelector } from 'react-redux';
 import Menu from '../Menu/Menu';
 import SearchBar from '../SearchBar/SearchBar';
-import { Link } from 'react-router-dom';
 
 const Header = () => {
   const mobile = useSelector((state) => state.mobile.active);
@@ -12,14 +11,14 @@ const Header = () => {
   return (
     <Wrapper mobile={mobile} className="width">
       {mobile ? (
-        <Link to="/">
+        <HomeLink to="/">
           <Logo />
-        </Link>
+        </HomeLink>
       ) : (
         <>
-          <Link to="/">
+          <HomeLink to="/">
             <Logo />
-          </Link>
+          </HomeLink>
           <SearchBar /> <Menu />
         </>
       )}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Wrapper = styled.header`
@@ -11,4 +12,8 @@ export const Wrapper = styled.header`
   box-shadow: var(--header-shadow);
   position: fixed;
   z-index: 999;
+`;
+
+export const HomeLink = styled(Link)`
+  display: flex;
 `;
