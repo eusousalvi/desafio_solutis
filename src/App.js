@@ -50,7 +50,7 @@ function App() {
             <Route path="/cart/" children={<Cart />} />
             <Route path="/favorites/" children={<Favorites />} />
             <Route path="/user/" children={<User />} />
-            <Route path="/*" children={<NotFound />} />
+            <Route exact path="/*" children={<NotFound />} />
           </Switch>
         </main>
         <Footer />
