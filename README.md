@@ -13,11 +13,8 @@
   <a href="https://github.com/gabriel-codes/desafio_solutis">
     <img src="https://github.com/gabriel-codes/desafio_solutis/blob/main/src/assets/logo.svg" alt="Logo" width="80" height="80">
   </a>
-
-  <h3 align="center">project_title</h3>
-
   <p align="center">
-    project_description
+    A simples Fake Shop. 
     <br />
     <a href="https://github.com/gabriel-codes/desafio_solutis"><strong>Explore the docs »</strong></a>
     <br />
