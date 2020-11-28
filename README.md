@@ -71,6 +71,7 @@ The project FakeShop was designed on [Figma](https://www.figma.com/proto/Dhn6kCA
 * [React-Icons](https://react-icons.github.io/react-icons/)
 * [Json-Server](https://my-json-server.typicode.com/)
 * [React-Router-Dom](https://reactrouter.com/web/guides/quick-start)
+* [Redux-Toolkit](https://redux-toolkit.js.org/)
 
 
 <!-- GETTING STARTED -->
@@ -135,6 +136,7 @@ Project Link: [https://github.com/gabriel-codes/desafio_solutis](https://github.
 * [React-Icons](https://react-icons.github.io/react-icons/)
 * [Json-Server](https://my-json-server.typicode.com/)
 * [React-Router-Dom](https://reactrouter.com/web/guides/quick-start)
+* [Redux-Toolkit](https://redux-toolkit.js.org/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
