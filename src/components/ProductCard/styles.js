@@ -26,6 +26,7 @@ export const Details = styled.div`
   padding: 0.5rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: column;
 `;
 
