@@ -23,7 +23,6 @@ const slice = createSlice({
     },
     remove: {
       reducer(state, action) {
-        console.log(action);
         state.items = state.items.filter((item) => item.id !== action.payload);
       },
       prepare(payload) {
@@ -47,7 +46,7 @@ export const getOnClick = (data) => (dispatch) => {
     case 'remove':
       return dispatch(remove(data.product.id));
     default:
-      return console.log('N faz nada');
+      return;
   }
 };
 

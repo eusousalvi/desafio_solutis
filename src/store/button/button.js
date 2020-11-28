@@ -26,7 +26,7 @@ export const getOnClick = (data) => (dispatch) => {
     case 'remove':
       return dispatch(remove(data.product.id));
     default:
-      return console.log('N faz nada');
+      return;
   }
 };
 

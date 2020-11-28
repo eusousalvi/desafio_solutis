@@ -21,10 +21,8 @@ function App() {
     function listener() {
       const screen = window.screen.width;
       if (screen < 768) {
-        console.log('Menor que 768');
         dispatch(activeMobile());
       } else {
-        console.log('Maior que 768');
         dispatch(deactivateMobile());
       }
     }

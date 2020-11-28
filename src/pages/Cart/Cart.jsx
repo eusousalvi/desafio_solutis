@@ -16,7 +16,6 @@ const Cart = () => {
     return () => dispatch(configureButton(btn.hide));
   }, [dispatch, cart]);
 
-  console.log(cart?.items.length);
   if (cart?.items.length <= 0)
     return <DefaultMessage text="Você ainda não escolheu nada :(" />;
 
