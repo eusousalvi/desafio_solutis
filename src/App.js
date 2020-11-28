@@ -45,12 +45,12 @@ function App() {
           <Switch>
             <Route exact path="/" children={<Home />} />
             <Route exact path="/results/" children={<Results />} />
-            <Route exact path="/results/:id" children={<Results />} />
-            <Route exact path="/product/:id" children={<Product />} />
-            <Route exact path="/cart/" children={<Cart />} />
-            <Route exact path="/favorites/" children={<Favorites />} />
-            <Route exact path="/user/" children={<User />} />
-            <Route exact path="/*" children={<NotFound />} />
+            <Route path="/results/:id" children={<Results />} />
+            <Route path="/product/:id" children={<Product />} />
+            <Route path="/cart/" children={<Cart />} />
+            <Route path="/favorites/" children={<Favorites />} />
+            <Route path="/user/" children={<User />} />
+            <Route path="/*" children={<NotFound />} />
           </Switch>
         </main>
         <Footer />

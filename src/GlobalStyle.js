@@ -66,4 +66,17 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     max-width: 1440px;
   }
+
+  .animeDown {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: animeDown 0.3s forwards;
+  }
+
+  @keyframes animeDown {
+    to {
+      opacity: 1;
+      transform: initial;
+    }
+  }
 `;

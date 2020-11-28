@@ -12,6 +12,7 @@ const SearchBar = () => {
   function handleSubmit(event) {
     event.preventDefault();
     history.push(`/results/${value}`);
+    setValue('');
   }
 
   return (

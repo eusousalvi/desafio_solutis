@@ -22,7 +22,7 @@ const ProductCard = ({ product }) => {
   }, [setOnCart]);
 
   return (
-    <Card mobile={mobile}>
+    <Card mobile={mobile} className="animeDown">
       <Link to={`/product/${product.id}`}>
         <Img src={product.image} />
       </Link>

@@ -14,8 +14,8 @@ const ProductCardList = () => {
       {products &&
         products.items.map((product) => {
           return (
-            <li>
-              <ProductCard key={product.id} product={product} />
+            <li key={product.id}>
+              <ProductCard product={product} />
             </li>
           );
         })}
