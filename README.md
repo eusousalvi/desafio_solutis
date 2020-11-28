@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/gabriel-codes/desafio_solutis">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/gabriel-codes/desafio_solutis/blob/main/src/assets/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">project_title</h3>
@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The project FakeShop was designed on [Figma](https://www.figma.com/proto/Dhn6kCAoMzJ7hM8ymtwrr5/Untitled?node-id=1%3A2&scaling=min-zoom) with mobile thinking for the process of Solutis on Talent Sprint. It's like it sound, a Fake Shop, where you can list, search, add to cart and favorite a product. The database and API was made with json-server.
+The project FakeShop was designed on [Figma](https://www.figma.com/proto/Dhn6kCAoMzJ7hM8ymtwrr5/Untitled?node-id=1%3A2&scaling=min-zoom) with mobile thinking for the process of Solutis on Talent Sprint. It's like it sound, a Fake Shop, where you can list, search, add to cart, remove from cart and favorite a product. The database and API was made with json-server.
 
 
 ### Built With
