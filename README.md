@@ -1,70 +1,154 @@
-# Getting Started with Create React App
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/gabriel-codes/desafio_solutis">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-### `yarn start`
+  <h3 align="center">project_title</h3>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <p align="center">
+    project_description
+    <br />
+    <a href="https://github.com/gabriel-codes/desafio_solutis"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/gabriel-codes/desafio_solutis">View Demo</a>
+    ·
+    <a href="https://github.com/gabriel-codes/desafio_solutis/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/gabriel-codes/desafio_solutis/issues">Request Feature</a>
+  </p>
+</p>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The project FakeShop was designed on [Figma](https://www.figma.com/proto/Dhn6kCAoMzJ7hM8ymtwrr5/Untitled?node-id=1%3A2&scaling=min-zoom) with mobile thinking for the process of Solutis on Talent Sprint. It's like it sound, a Fake Shop, where you can list, search, add to cart and favorite a product. The database and API was made with json-server.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Built With
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* [React](https://pt-br.reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [Styled-Components](https://styled-components.com/)
+* [React-Icons](https://react-icons.github.io/react-icons/)
+* [Json-Server](https://my-json-server.typicode.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- GETTING STARTED -->
+## Getting Started
 
-## Learn More
+To get a local copy up and running follow these simple steps.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This is an example of how to list things you need to use the software and how to install them.
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
 
-### Code Splitting
+### Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone the repo
+   ```sh
+   git clone https://github.com/gabriel-codes/desafio_solutis.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
 
-### Analyzing the Bundle Size
+<!-- CONTRIBUTING -->
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-### Making a Progressive Web App
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!-- LICENSE -->
+## License
 
-### Deployment
+Distributed under the MIT License. See `LICENSE` for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- CONTACT -->
+## Contact
+
+Gabriel Silva 
+
+Project Link: [https://github.com/gabriel-codes/desafio_solutis](https://github.com/gabriel-codes/desafio_solutis)
+
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+* [React](https://pt-br.reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [Styled-Components](https://styled-components.com/)
+* [React-Icons](https://react-icons.github.io/react-icons/)
+* [Json-Server](https://my-json-server.typicode.com/)
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/gabriel-codes/desafio_solutis.svg?style=for-the-badge
+[contributors-url]: https://github.com/gabriel-codes/desafio_solutis/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/gabriel-codes/desafio_solutis.svg?style=for-the-badge
+[forks-url]: https://github.com/gabriel-codes/desafio_solutis/network/members
+[stars-shield]: https://img.shields.io/github/stars/gabriel-codes/desafio_solutis.svg?style=for-the-badge
+[stars-url]: https://github.com/gabriel-codes/repo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/gabriel-codes/desafio_solutis.svg?style=for-the-badge
+[issues-url]: https://github.com/github_username/gabriel-codes/issues
+[license-shield]: https://img.shields.io/github/license/gabriel-codes/desafio_solutis.svg?style=for-the-badge
+[license-url]: https://github.com/gabriel-codes/desafio_solutis/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/gabriel-codes
