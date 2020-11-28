@@ -27,9 +27,9 @@ const ProductCard = ({ product }) => {
         <Img src={product.image} />
       </Link>
       <Details>
-        <h3>{cropString(product.name, 13)}</h3>
+        <h3>{cropString(product.name, 11)}</h3>
         <Price>{formatCurrency(product.price)}</Price>
-        <p>{cropString(product.description, 30)}</p>
+        <p>{cropString(product.description, 27)}</p>
         <Bottom>
           <Button product={product} />
           {onCart && <ProductAmount>{product.amount}</ProductAmount>}
