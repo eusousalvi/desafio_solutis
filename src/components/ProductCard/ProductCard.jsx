@@ -22,21 +22,21 @@ const ProductCard = ({ product }) => {
   }, [setOnCart]);
 
   return (
-    <Card mobile={mobile}>
-      <Link to={`/product/${product.id}`}>
+    <Link to={`/product/${product.id}`}>
+      <Card mobile={mobile}>
         <Img src={product.image} />
-      </Link>
-      <Details>
-        <h3>{cropString(product.name, 13)}</h3>
-        <Price>{formatCurrency(product.price)}</Price>
-        <p>{cropString(product.description, 30)}</p>
-        <Bottom>
-          <Button product={product} />
-          {onCart && <ProductAmount>{product.amount}</ProductAmount>}
-        </Bottom>
-        <FavButton product={product} />
-      </Details>
-    </Card>
+        <Details>
+          <h3>{cropString(product.name, 13)}</h3>
+          <Price>{formatCurrency(product.price)}</Price>
+          <p>{cropString(product.description, 30)}</p>
+          <Bottom>
+            <Button product={product} />
+            {onCart && <ProductAmount>{product.amount}</ProductAmount>}
+          </Bottom>
+          <FavButton product={product} />
+        </Details>
+      </Card>
+    </Link>
   );
 };
 

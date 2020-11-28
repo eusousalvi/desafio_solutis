@@ -13,7 +13,11 @@ const ProductCardList = () => {
     <Wrapper mobile={mobile}>
       {products &&
         products.items.map((product) => {
-          return <ProductCard key={product.id} product={product} />;
+          return (
+            <li>
+              <ProductCard key={product.id} product={product} />
+            </li>
+          );
         })}
     </Wrapper>
   );

@@ -27,6 +27,15 @@ export const GlobalStyle = createGlobalStyle`
     font-family: 'Roboto', sans-serif;
   }
 
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  li{
+    list-style: none;
+  }
+
   #root{
     display: flex;
     flex-direction: column;

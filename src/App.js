@@ -12,6 +12,7 @@ import Favorites from './pages/Favorites/Favorites';
 import User from './pages/User/User';
 import { useDispatch } from 'react-redux';
 import { activeMobile, deactivateMobile } from './store/mobile/mobile';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
   const dispatch = useDispatch();
@@ -20,8 +21,10 @@ function App() {
     function listener() {
       const screen = window.screen.width;
       if (screen < 768) {
+        console.log('Menor que 768');
         dispatch(activeMobile());
       } else {
+        console.log('Maior que 768');
         dispatch(deactivateMobile());
       }
     }
@@ -49,6 +52,7 @@ function App() {
             <Route exact path="/cart/" children={<Cart />} />
             <Route exact path="/favorites/" children={<Favorites />} />
             <Route exact path="/user/" children={<User />} />
+            <Route exact path="/*" children={<NotFound />} />
           </Switch>
         </main>
         <Footer />
